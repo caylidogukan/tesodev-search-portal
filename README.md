@@ -26,7 +26,7 @@
 - **router/**: Contains the routing setup for navigating between different pages.
 - **utils/**: Includes utility functions like `transformData.ts` to process data.
 
-###server.mjs explanation:
+### server.mjs explanation:
 I have implemented server.mjs to handle URL shortening securely and bypass CORS restrictions. The frontend needed to interact with an external URL-shortening API, but direct requests from the browser faced limitations. The backend server acts as a proxy, forwarding requests to the external API, preventing CORS issues, and keeping sensitive API credentials hidden. This approach simplifies frontend API interaction while enhancing security and flexibility.
 
 
