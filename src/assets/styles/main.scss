@@ -1,0 +1,62 @@
+// src/assets/styles/main.scss
+
+// Variables
+$primary-color: #42b983;
+$secondary-color: #35495e;
+$font-family: "Arial", sans-serif;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Base styles
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  background-color: $secondary-color;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+// Components
+.nav {
+  @include flex-center;
+  gap: 1em;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.main-content {
+  padding: 2em;
+}
+
+.button {
+  background-color: $primary-color;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+}
