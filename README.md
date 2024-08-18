@@ -39,7 +39,7 @@ I have implemented server.mjs to handle URL shortening securely and bypass CORS 
 
 ### Running the project  
 - Start the backend server
-  cd backend
-  node server.mjs
+  * cd backend
+  * node server.mjs
 - In a new terminal window, start the frontend
   npm run dev
