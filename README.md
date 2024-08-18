@@ -42,4 +42,4 @@ I have implemented server.mjs to handle URL shortening securely and bypass CORS 
   * cd backend
   * node server.mjs
 - In a new terminal window, start the frontend
-  npm run dev
+  * npm run dev
